@@ -1,115 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel Greenfield Regency | Boutique Hotel in Shimla</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #f5f7f6;
-            color: #333;
-            line-height: 1.6;
-        }
-        header {
-            background: url('https://images.unsplash.com/photo-1501117716987-c8e1ecb2105f') center/cover no-repeat;
-            color: white;
-            padding: 80px 20px;
-            text-align: center;
-        }
-        header h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
-        }
-        header p {
-            font-size: 1.2rem;
-        }
-        section {
-            padding: 50px 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
-        h2 {
-            color: #2f6f4e;
-            margin-bottom: 15px;
-        }
-        .amenities ul {
-            list-style: none;
-            padding: 0;
-        }
-        .amenities li {
-            background: #e8f1ec;
-            margin: 8px 0;
-            padding: 10px;
-            border-radius: 5px;
-        }
-        .cta {
-            background-color: #2f6f4e;
-            color: white;
-            text-align: center;
-            padding: 40px 20px;
-        }
-        .cta h2 {
-            color: white;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #1f3d2b;
-            color: white;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hotel Greenfield Regency | Shimla</title>
+
+<style>
+:root {
+  --green: #0f5132;
+  --light-green: #d1e7dd;
+  --gold: #ffc107;
+  --dark: #1c1c1c;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #f4fdf8;
+  color: #222;
+}
+
+header {
+  background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+  url("https://images.unsplash.com/photo-1501117716987-c8e1ecb2105f");
+  background-size: cover;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3.2rem;
+  margin-bottom: 10px;
+  color: var(--gold);
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+h2 {
+  color: var(--green);
+  font-size: 2rem;
+}
+
+.amenities {
+  background: var(--light-green);
+  border-radius: 10px;
+}
+
+.amenities ul {
+  list-style: none;
+  padding: 0;
+}
+
+.amenities li {
+  background: white;
+  margin: 10px 0;
+  padding: 15px;
+  border-left: 6px solid var(--green);
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.form-section {
+  background: var(--dark);
+  color: white;
+  border-radius: 10px;
+}
+
+form {
+  display: grid;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+input, select, button {
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+}
+
+input, select {
+  width: 100%;
+}
+
+button {
+  background: var(--gold);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ffb300;
+}
+
+.success {
+  margin-top: 15px;
+  color: #00ff99;
+  font-weight: bold;
+}
+
+footer {
+  background: var(--green);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+</style>
 </head>
+
 <body>
 
 <header>
-    <h1>Hotel Greenfield Regency</h1>
-    <p>Boutique Hotel in Shimla, India</p>
-    <p><em>A peaceful mountain escape for young travelers and families</em></p>
+  <h1>Hotel Greenfield Regency</h1>
+  <p>Boutique Hotel in Shimla, India</p>
+  <p><em>Perfect for young travelers & families</em></p>
 </header>
 
 <section>
-    <h2>About Us</h2>
-    <p>
-        Hotel Greenfield Regency is a boutique hotel nestled in the beautiful hills of Shimla, India.
-        Surrounded by lush greenery and scenic mountain views, our hotel offers a perfect balance of
-        comfort, style, and tranquility. Designed especially for young travelers and family guests,
-        we provide a warm and relaxing stay close to Shimla’s most popular attractions.
-    </p>
+  <h2>About Us</h2>
+  <p>
+    Hotel Greenfield Regency is a boutique hotel nestled in the scenic hills of Shimla.
+    Designed for young travelers and families, we combine modern comfort with nature.
+  </p>
 </section>
 
 <section class="amenities">
-    <h2>Rooms & Amenities</h2>
-    <ul>
-        <li>Spacious deluxe and family rooms</li>
-        <li>Mountain-view balconies</li>
-        <li>Free high-speed Wi-Fi</li>
-        <li>24/7 room service</li>
-        <li>On-site restaurant serving local cuisine</li>
-        <li>Family-friendly lounge and common areas</li>
-    </ul>
+  <h2>Rooms & Amenities</h2>
+  <ul>
+    <li>Mountain-view luxury rooms</li>
+    <li>Free high-speed Wi-Fi</li>
+    <li>Family-friendly spaces</li>
+    <li>Local cuisine restaurant</li>
+    <li>Close to Mall Road</li>
+  </ul>
 </section>
 
-<section>
-    <h2>Why Choose Us</h2>
-    <p>
-        Hotel Greenfield Regency is ideal for weekend getaways, family vacations, and young explorers.
-        Located away from city noise yet close to Mall Road and tourist attractions, our hotel offers
-        affordable boutique luxury in a peaceful environment.
-    </p>
-</section>
+<section class="form-section">
+  <h2>Check Your Stay Preferences</h2>
+  <p>Tell us about your stay — we’ll get back to you!</p>
 
-<section class="cta">
-    <h2>Plan Your Stay</h2>
-    <p>Contact us today for reservations and special offers</p>
-    <p><strong>Email:</strong> info@hotelgreenfieldregency.com</p>
-    <p><strong>Phone:</strong> +91-XXXXXXXXXX</p>
+  <form id="bookingForm">
+    <input type="text" id="name" placeholder="Full Name" required>
+    <input type="email" id="email" placeholder="Email Address" required>
+
+    <select id="price" required>
+      <option value="">Select Price Range</option>
+      <option>₹2,000 – ₹4,000 per night</option>
+      <option>₹4,000 – ₹6,000 per night</option>
+      <option>₹6,000+ per night</option>
+    </select>
+
+    <button type="submit">Submit Details</button>
+  </form>
+
+  <div class="success" id="successMsg"></div>
 </section>
 
 <footer>
-    <p>&copy; 2026 Hotel Greenfield Regency | Shimla, India</p>
+  <p>© 2026 Hotel Greenfield Regency | Shimla, India</p>
 </footer>
+
+<script>
+document.getElementById("bookingForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const price = document.getElementById("price").value;
+
+  localStorage.setItem("guestName", name);
+  localStorage.setItem("guestEmail", email);
+  localStorage.setItem("priceRange", price);
+
+  document.getElementById("successMsg").innerText =
+    "Thank you, " + name + "! Your preferences have been saved.";
+
+  this.reset();
+});
+</script>
 
 </body>
 </html>
